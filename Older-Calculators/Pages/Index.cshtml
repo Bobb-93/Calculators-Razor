@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<header>
+        <h1>Добре дошли!</h1>
+        <h1>Изберете калкулатор:</h1>
+</header>
+
+<div class="text-center">
+    @using (Html.BeginForm())
+     {
+         <input type="button" name="button" class="button1" value="Кредитен калкулатор" />
+         <input type="button" name="button" class="button1" value="Калкулатор за рефинансиране на кредит" />
+         <input type="button" name="button" class="button1" value="Лизингов калкулатор за покупка на стоки" /> 
+     }
+</div>
